@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'joaomfrebelo/log4php',
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
-        'reference' => NULL,
+        'pretty_version' => 'dev-master',
+        'version' => 'dev-master',
+        'reference' => '85f329dabda8f444c35bf93ca1f1436931c9e80a',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -38,9 +38,9 @@
             'dev_requirement' => false,
         ),
         'joaomfrebelo/log4php' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
-            'reference' => NULL,
+            'pretty_version' => 'dev-master',
+            'version' => 'dev-master',
+            'reference' => '85f329dabda8f444c35bf93ca1f1436931c9e80a',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
