@@ -1,0 +1,34 @@
+{
+  "name": "joaomfrebelo/log4php",
+  "description": "A versatile logging framework for PHP. Fork of apache/log4php",
+  "keywords": [
+    "log",
+    "logging",
+    "php"
+  ],
+  "homepage": "https://logging.apache.org/log4php/",
+  "type": "library",
+  "license": "Apache-2.0",
+  "support": {
+    "issues": "https://github.com/joaomfrebelo/joaomfrebelo-log4php/issues",
+    "source": "https://github.com/joaomfrebelo/joaomfrebelo-log4php",
+    "email": "joaomfrebelo@gmail.com"
+  },
+  "autoload": {
+    "classmap": [
+      "src/main/php/"
+    ]
+  },
+  "require": {
+    "php": "^8.0 || ^8.1",
+    "ext-libxml": "*",
+    "ext-simplexml": "*",
+    "mongodb/mongodb": "^1.15.0",
+    "ext-mongodb": "*",
+    "ext-pdo": "*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.5.25",
+    "firephp/firephp-core": "^v0.5.3"
+  }
+}
