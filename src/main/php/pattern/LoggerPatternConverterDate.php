@@ -77,7 +77,7 @@ class LoggerPatternConverterDate extends LoggerPatternConverter
         if ($this->useLocalDate) {
             return $this->date($this->format, $event->getTimeStamp());
         }
-        return date($this->format, (int)$event->getTimeStamp());
+        return (new \DateTimeImmutable())->format($this->format);
     }
 
     /**
