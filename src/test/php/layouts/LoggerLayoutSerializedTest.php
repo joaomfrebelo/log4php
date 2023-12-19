@@ -74,7 +74,7 @@ class LoggerLayoutSerializedTest extends TestCase
         $actual = ob_get_contents();
         ob_end_clean();
 
-        $event = unserialize($actual);
+        $event = unserialize(\trim($actual));
 
         self::assertInstanceOf('LoggerLoggingEvent', $event);
         self::assertEquals('Interesting message.', $event->getMessage());
@@ -106,7 +106,7 @@ class LoggerLayoutSerializedTest extends TestCase
         $actual = ob_get_contents();
         ob_end_clean();
 
-        $event = unserialize($actual);
+        $event = unserialize(\trim($actual));
 
         self::assertInstanceOf('LoggerLoggingEvent', $event);
         self::assertEquals('Interesting message.', $event->getMessage());

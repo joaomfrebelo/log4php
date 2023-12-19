@@ -7,6 +7,7 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Attribute' => $vendorDir . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
+    'CURLStringFile' => $vendorDir . '/symfony/polyfill-php81/Resources/stubs/CURLStringFile.php',
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
     'FB' => $vendorDir . '/firephp/firephp-core/lib/FirePHPCore/fb.php',
     'FirePHP' => $vendorDir . '/firephp/firephp-core/lib/FirePHPCore/FirePHP.class.php',
@@ -141,6 +142,7 @@ return array(
     'PHPUnit\\Framework\\Constraint\\LogicalXor' => $vendorDir . '/phpunit/phpunit/src/Framework/Constraint/Operator/LogicalXor.php',
     'PHPUnit\\Framework\\Constraint\\ObjectEquals' => $vendorDir . '/phpunit/phpunit/src/Framework/Constraint/Object/ObjectEquals.php',
     'PHPUnit\\Framework\\Constraint\\ObjectHasAttribute' => $vendorDir . '/phpunit/phpunit/src/Framework/Constraint/Object/ObjectHasAttribute.php',
+    'PHPUnit\\Framework\\Constraint\\ObjectHasProperty' => $vendorDir . '/phpunit/phpunit/src/Framework/Constraint/Object/ObjectHasProperty.php',
     'PHPUnit\\Framework\\Constraint\\Operator' => $vendorDir . '/phpunit/phpunit/src/Framework/Constraint/Operator/Operator.php',
     'PHPUnit\\Framework\\Constraint\\RegularExpression' => $vendorDir . '/phpunit/phpunit/src/Framework/Constraint/String/RegularExpression.php',
     'PHPUnit\\Framework\\Constraint\\SameSize' => $vendorDir . '/phpunit/phpunit/src/Framework/Constraint/Cardinality/SameSize.php',
@@ -371,8 +373,8 @@ return array(
     'PHPUnit\\TextUI\\XmlConfiguration\\Migrator' => $vendorDir . '/phpunit/phpunit/src/TextUI/XmlConfiguration/Migration/Migrator.php',
     'PHPUnit\\TextUI\\XmlConfiguration\\MoveAttributesFromFilterWhitelistToCoverage' => $vendorDir . '/phpunit/phpunit/src/TextUI/XmlConfiguration/Migration/Migrations/MoveAttributesFromFilterWhitelistToCoverage.php',
     'PHPUnit\\TextUI\\XmlConfiguration\\MoveAttributesFromRootToCoverage' => $vendorDir . '/phpunit/phpunit/src/TextUI/XmlConfiguration/Migration/Migrations/MoveAttributesFromRootToCoverage.php',
-    'PHPUnit\\TextUI\\XmlConfiguration\\MoveWhitelistDirectoriesToCoverage' => $vendorDir . '/phpunit/phpunit/src/TextUI/XmlConfiguration/Migration/Migrations/MoveWhitelistDirectoriesToCoverage.php',
     'PHPUnit\\TextUI\\XmlConfiguration\\MoveWhitelistExcludesToCoverage' => $vendorDir . '/phpunit/phpunit/src/TextUI/XmlConfiguration/Migration/Migrations/MoveWhitelistExcludesToCoverage.php',
+    'PHPUnit\\TextUI\\XmlConfiguration\\MoveWhitelistIncludesToCoverage' => $vendorDir . '/phpunit/phpunit/src/TextUI/XmlConfiguration/Migration/Migrations/MoveWhitelistIncludesToCoverage.php',
     'PHPUnit\\TextUI\\XmlConfiguration\\PHPUnit' => $vendorDir . '/phpunit/phpunit/src/TextUI/XmlConfiguration/PHPUnit/PHPUnit.php',
     'PHPUnit\\TextUI\\XmlConfiguration\\Php' => $vendorDir . '/phpunit/phpunit/src/TextUI/XmlConfiguration/PHP/Php.php',
     'PHPUnit\\TextUI\\XmlConfiguration\\PhpHandler' => $vendorDir . '/phpunit/phpunit/src/TextUI/XmlConfiguration/PHP/PhpHandler.php',
@@ -510,6 +512,7 @@ return array(
     'PharIo\\Version\\VersionConstraintValue' => $vendorDir . '/phar-io/version/src/VersionConstraintValue.php',
     'PharIo\\Version\\VersionNumber' => $vendorDir . '/phar-io/version/src/VersionNumber.php',
     'PhpToken' => $vendorDir . '/symfony/polyfill-php80/Resources/stubs/PhpToken.php',
+    'ReturnTypeWillChange' => $vendorDir . '/symfony/polyfill-php81/Resources/stubs/ReturnTypeWillChange.php',
     'SebastianBergmann\\CliParser\\AmbiguousOptionException' => $vendorDir . '/sebastian/cli-parser/src/exceptions/AmbiguousOptionException.php',
     'SebastianBergmann\\CliParser\\Exception' => $vendorDir . '/sebastian/cli-parser/src/exceptions/Exception.php',
     'SebastianBergmann\\CliParser\\OptionDoesNotAllowArgumentException' => $vendorDir . '/sebastian/cli-parser/src/exceptions/OptionDoesNotAllowArgumentException.php',
