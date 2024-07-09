@@ -35,7 +35,7 @@ class LoggerPatternConverterLogger extends LoggerPatternConverter
 {
 
     /** Length to which to shorten the name. */
-    private int $length;
+    private ?int $length;
 
     /** Holds processed logger names. */
     private array $cache = array();

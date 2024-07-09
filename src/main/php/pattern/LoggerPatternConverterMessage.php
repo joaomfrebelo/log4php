@@ -31,7 +31,7 @@
 class LoggerPatternConverterMessage extends LoggerPatternConverter
 {
 
-    public function convert(LoggerLoggingEvent $event): string
+    public function convert(LoggerLoggingEvent $event): ?string
     {
         return $event->getRenderedMessage();
     }
