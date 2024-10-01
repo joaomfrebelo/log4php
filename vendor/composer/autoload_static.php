@@ -30,10 +30,6 @@ class ComposerStaticInit0e1c277b80bdc3dbc2741e156e093f06
         array (
             'MongoDB\\' => 8,
         ),
-        'J' => 
-        array (
-            'Jean85\\' => 7,
-        ),
         'D' => 
         array (
             'Doctrine\\Instantiator\\' => 22,
@@ -61,10 +57,6 @@ class ComposerStaticInit0e1c277b80bdc3dbc2741e156e093f06
         'MongoDB\\' => 
         array (
             0 => __DIR__ . '/..' . '/mongodb/mongodb/src',
-        ),
-        'Jean85\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/jean85/pretty-package-versions/src',
         ),
         'Doctrine\\Instantiator\\' => 
         array (
@@ -552,6 +544,7 @@ class ComposerStaticInit0e1c277b80bdc3dbc2741e156e093f06
         'PharIo\\Manifest\\ManifestLoader' => __DIR__ . '/..' . '/phar-io/manifest/src/ManifestLoader.php',
         'PharIo\\Manifest\\ManifestLoaderException' => __DIR__ . '/..' . '/phar-io/manifest/src/exceptions/ManifestLoaderException.php',
         'PharIo\\Manifest\\ManifestSerializer' => __DIR__ . '/..' . '/phar-io/manifest/src/ManifestSerializer.php',
+        'PharIo\\Manifest\\NoEmailAddressException' => __DIR__ . '/..' . '/phar-io/manifest/src/exceptions/NoEmailAddressException.php',
         'PharIo\\Manifest\\PhpElement' => __DIR__ . '/..' . '/phar-io/manifest/src/xml/PhpElement.php',
         'PharIo\\Manifest\\PhpExtensionRequirement' => __DIR__ . '/..' . '/phar-io/manifest/src/values/PhpExtensionRequirement.php',
         'PharIo\\Manifest\\PhpVersionRequirement' => __DIR__ . '/..' . '/phar-io/manifest/src/values/PhpVersionRequirement.php',

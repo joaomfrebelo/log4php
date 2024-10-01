@@ -107,7 +107,7 @@ class Logger
      * @param Exception|null $throwable Optional throwable information to include
      *   in the logging event.
      */
-    public function trace(mixed $message, Exception $throwable = null): void
+    public function trace(mixed $message, ?Exception $throwable = null): void
     {
         $this->log(LoggerLevel::getLevelTrace(), $message, $throwable);
     }
@@ -119,7 +119,7 @@ class Logger
      * @param Exception|null $throwable Optional throwable information to include
      *   in the logging event.
      */
-    public function debug(mixed $message, Exception $throwable = null): void
+    public function debug(mixed $message, ?Exception $throwable = null): void
     {
         $this->log(LoggerLevel::getLevelDebug(), $message, $throwable);
     }
@@ -131,7 +131,7 @@ class Logger
      * @param Exception|null $throwable Optional throwable information to include
      *   in the logging event.
      */
-    public function info(mixed $message, Exception $throwable = null): void
+    public function info(mixed $message, ?Exception $throwable = null): void
     {
         $this->log(LoggerLevel::getLevelInfo(), $message, $throwable);
     }
@@ -143,7 +143,7 @@ class Logger
      * @param Exception|null $throwable Optional throwable information to include
      *   in the logging event.
      */
-    public function warn(mixed $message, Exception $throwable = null): void
+    public function warn(mixed $message, ?Exception $throwable = null): void
     {
         $this->log(LoggerLevel::getLevelWarn(), $message, $throwable);
     }
@@ -155,7 +155,7 @@ class Logger
      * @param Exception|null $throwable Optional throwable information to include
      *   in the logging event.
      */
-    public function error(mixed $message, Exception $throwable = null): void
+    public function error(mixed $message, ?Exception $throwable = null): void
     {
         $this->log(LoggerLevel::getLevelError(), $message, $throwable);
     }
@@ -167,7 +167,7 @@ class Logger
      * @param Exception|null $throwable Optional throwable information to include
      *   in the logging event.
      */
-    public function fatal(mixed $message, Exception $throwable = null): void
+    public function fatal(mixed $message, ?Exception $throwable = null): void
     {
         $this->log(LoggerLevel::getLevelFatal(), $message, $throwable);
     }
@@ -180,7 +180,7 @@ class Logger
      * @param Exception|null $throwable Optional throwable information to include
      *   in the logging event.
      */
-    public function log(LoggerLevel $level, mixed $message, Exception $throwable = null): void
+    public function log(LoggerLevel $level, mixed $message, ?Exception $throwable = null): void
     {
         if ($this->isEnabledFor($level)) {
             $event = new LoggerLoggingEvent($this->fqcn, $this, $level, $message, null, $throwable);
@@ -587,7 +587,7 @@ class Logger
      * implements the LoggerConfigurator interface. If left empty, the default
      * configurator implementation will be used.
      */
-    public static function configure(array|string|int $configuration = null, LoggerConfigurator|string $configurator = null): void
+    public static function configure(array|string|int|null $configuration = null, LoggerConfigurator|string|null $configurator = null): void
     {
         self::resetConfiguration();
         $configurator = self::getConfigurator($configurator);

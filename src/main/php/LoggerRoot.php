@@ -58,7 +58,7 @@ class LoggerRoot extends Logger
      *
      * @param LoggerLevel|null $level
      */
-    public function setLevel(LoggerLevel $level = null): void
+    public function setLevel(?LoggerLevel $level = null): void
     {
         if (isset($level)) {
             parent::setLevel($level);

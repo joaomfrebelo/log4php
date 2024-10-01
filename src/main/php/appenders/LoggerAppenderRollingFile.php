@@ -83,6 +83,8 @@ class LoggerAppenderRollingFile extends LoggerAppenderFile
      */
     protected bool $compress = false;
 
+    protected bool $compression = false;
+
     /**
      * Set to true in the constructor if PHP >= 5.3.0. In that case clearstatcache
      * supports conditional clearing of statistics.
@@ -121,7 +123,7 @@ class LoggerAppenderRollingFile extends LoggerAppenderFile
      *
      * @throws LoggerException If any part of the rollover procedure fails.
      */
-    private function rollOver()
+    private function rollOver(): void
     {
         // If maxBackups <= 0, then there is no file renaming to be done.
         if ($this->maxBackupIndex > 0) {
@@ -211,7 +213,7 @@ class LoggerAppenderRollingFile extends LoggerAppenderFile
      * Writes a string to the target file. Opens file if not already open.
      * @param string|null $string Data to write.
      */
-    protected function write(?string $string)
+    protected function write(?string $string): void
     {
         if ($string === null) return;
         // Lazy file open
@@ -255,7 +257,7 @@ class LoggerAppenderRollingFile extends LoggerAppenderFile
         }
     }
 
-    public function activateOptions()
+    public function activateOptions(): void
     {
         parent::activateOptions();
 
@@ -269,7 +271,7 @@ class LoggerAppenderRollingFile extends LoggerAppenderFile
      * Set the 'maxBackupIndex' parameter.
      * @param integer $maxBackupIndex
      */
-    public function setMaxBackupIndex(int $maxBackupIndex)
+    public function setMaxBackupIndex(int $maxBackupIndex): void
     {
         $this->setPositiveInteger('maxBackupIndex', $maxBackupIndex);
     }
@@ -287,7 +289,7 @@ class LoggerAppenderRollingFile extends LoggerAppenderFile
      * Set the 'maxFileSize' parameter.
      * @param mixed $maxFileSize
      */
-    public function setMaxFileSize(mixed $maxFileSize)
+    public function setMaxFileSize(mixed $maxFileSize): void
     {
         $this->setFileSize('maxFileSize', $maxFileSize);
     }
@@ -306,7 +308,7 @@ class LoggerAppenderRollingFile extends LoggerAppenderFile
      * @param mixed $maxFileSize
      * @deprecated Use setMaxFileSize() instead.
      */
-    public function setMaximumFileSize(mixed $maxFileSize)
+    public function setMaximumFileSize(mixed $maxFileSize): void
     {
         $this->warn("The 'maximumFileSize' parameter is deprecated. Use 'maxFileSize' instead.");
         $this->setMaxFileSize($maxFileSize);
@@ -316,7 +318,7 @@ class LoggerAppenderRollingFile extends LoggerAppenderFile
      * Sets the 'compress' parameter.
      * @param boolean $compress
      */
-    public function setCompress(bool $compress)
+    public function setCompress(bool $compress): void
     {
         $this->setBoolean('compress', $compress);
     }
