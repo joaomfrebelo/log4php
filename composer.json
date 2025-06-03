@@ -1,5 +1,5 @@
 {
-  "name": "joaomfrebelo/log4php",
+  "name": "viridem/log4php",
   "description": "A versatile logging framework for PHP. Forked from apache/log4php",
   "keywords": [
     "log",
@@ -10,9 +10,9 @@
   "type": "library",
   "license": "Apache-2.0",
   "support": {
-    "issues": "https://github.com/joaomfrebelo/log4php/issues",
-    "source": "https://github.com/joaomfrebelo/log4php",
-    "email": "joaomfrebelo@gmail.com"
+    "issues": "https://github.com/viridem-team/log4php/issues",
+    "source": "https://github.com/viridem-team/log4php",
+    "email": "github@viridem.ca"
   },
   "autoload": {
     "classmap": [
@@ -23,7 +23,7 @@
     "php": "8.0.* || 8.1.* || 8.2.* || 8.3.*",
     "ext-libxml": "*",
     "ext-simplexml": "*",
-    "mongodb/mongodb": "^1.15.0",
+    "mongodb/mongodb": "^2.0.0",
     "ext-mongodb": "*",
     "ext-pdo": "*"
   },
